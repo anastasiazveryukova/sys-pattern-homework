@@ -88,7 +88,7 @@ apt install zabbix-agent
 ```
 Запустить Zabbix Agent
 ```
- systemctl restart zabbix-agent
+systemctl restart zabbix-agent
 systemctl enable zabbix-agent
 ```
 <img width="1533" height="877" alt="Снимок экрана 2025-12-11 224129" src="https://github.com/user-attachments/assets/8fb12a4c-164f-44fa-a786-13e6358e44c9" />
