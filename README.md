@@ -39,6 +39,7 @@
 
 
 Установить репозиторий Zabbix
+...
 wget https://repo.zabbix.com/zabbix/7.0/debian/pool/main/z/zabbix-release/zabbix-release_latest_7.0+debian13_all.deb
 dpkg -i zabbix-release_latest_7.0+debian13_all.deb
 apt update
