@@ -37,21 +37,30 @@
 <img width="1721" height="906" alt="Снимок экрана 2025-12-11 104034" src="https://github.com/user-attachments/assets/91ae700e-87ec-41de-b616-3f3494227c23" />
 
 Поле для вставки кода...
+Установить репозиторий Zabbix
 ```
 wget https://repo.zabbix.com/zabbix/7.0/debian/pool/main/z/zabbix-release/zabbix-release_latest_7.0+debian13_all.deb
+dpkg -i zabbix-release_latest_7.0+debian13_all.deb
+apt update
 ```
-'dpkg -i zabbix-release_latest_7.0+debian13_all.deb'
-....apt update
-....apt install zabbix-server-pgsql zabbix-frontend-php php8.4-pgsql zabbix-apache-conf zabbix-sql-scripts zabbix-agent
-....sudo -u postgres createuser --pwprompt zabbix
-....sudo -u postgres createdb -O zabbix zabbix
-
+Установить сервер Zabbix, интерфейс и агент
+```
+apt install zabbix-server-pgsql zabbix-frontend-php php8.4-pgsql zabbix-apache-conf zabbix-sql-scripts zabbix-agent
+```
+Создать исходную базу данных
+ ```
+sudo -u postgres createuser --pwprompt zabbix
+sudo -u postgres createdb -O zabbix zabbix
+```
 Внести изменения в фай конфигурции  /etc/zabbix/zabbix_server.conf
+```
 DBPassword=password
-
+```
+Запустить сервер Zabbix и процессы агентов
+```
 systemctl restart zabbix-server zabbix-agent apache2
 systemctl enable zabbix-server zabbix-agent apache2
-
+```
 ### Задание 2
 
 `Приведите ответ в свободной форме........`
