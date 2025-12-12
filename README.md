@@ -35,8 +35,10 @@
 Приложите в файл README.md текст использованных команд в GitHub.
 
 <img width="1721" height="906" alt="Снимок экрана 2025-12-11 104034" src="https://github.com/user-attachments/assets/91ae700e-87ec-41de-b616-3f3494227c23" />
+<img width="1720" height="981" alt="Снимок экрана 2025-12-12 100325" src="https://github.com/user-attachments/assets/82ff0a18-7715-4c10-a3ce-9d7394d18287" />
 
-Установить репозиторий Zabbix
+
+Установить репзиторий Zabbix
 ```
 wget https://repo.zabbix.com/zabbix/7.0/debian/pool/main/z/zabbix-release/zabbix-release_latest_7.0+debian13_all.deb
 dpkg -i zabbix-release_latest_7.0+debian13_all.deb
@@ -95,3 +97,4 @@ systemctl enable zabbix-agent
 <img width="1546" height="910" alt="Снимок экрана 2025-12-11 224210" src="https://github.com/user-attachments/assets/a4b7c92e-9a7c-4cf6-ae2e-c6e7b731001b" />
 <img width="1714" height="911" alt="Снимок экрана 2025-12-11 225256" src="https://github.com/user-attachments/assets/ac64ece6-95e3-441b-9721-58a03ce0ef49" />
 
+<img width="1543" height="729" alt="Снимок экрана 2025-12-12 101211" src="https://github.com/user-attachments/assets/a8596336-973b-466e-916a-f37254d61c18" />
